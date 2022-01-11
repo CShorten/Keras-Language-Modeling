@@ -1,4 +1,5 @@
 from tensorflow.keras.layers import TextVectorization
+import tensorflow as tf
 
 def custom_standardization(input_data):
     lowercase = tf.strings.lower(input_data)
