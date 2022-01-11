@@ -43,7 +43,7 @@ def encode(dataset, vocab_size, max_len, special_tokens):
   )
   special_ids = []
   for i in range(len(special_tokens)):
-    special_ids.append(vectorize_layer([special_tokens[i]]).numpy()[0][0]
+    special_ids.append(vectorize_layer([special_tokens[i]]).numpy()[0][0])
   
   encoded_dataset = vectorize_layer(dataset)
   return encoded_dataset.numpy(), special_ids
