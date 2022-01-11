@@ -1,4 +1,7 @@
 # Citation to Keras Code Examples
+import pandas as pd
+import glob
+
 def get_data_from_text_files(folder_name):
   def get_text_list_from_files(files):
     text_list = []
