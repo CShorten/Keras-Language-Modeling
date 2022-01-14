@@ -1,5 +1,5 @@
 import random
-
+import numpy as np
 
 # time this
 
