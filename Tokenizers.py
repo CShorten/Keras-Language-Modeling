@@ -43,7 +43,7 @@ def get_vectorize_layer(texts, vocab_size, max_seq, special_tokens=["[MASK], [st
   
 def encode(dataset, vocab_size, max_len, special_tokens):
   vectorize_layer = get_vectorize_layer(
-    dataset.review.values.tolist(), vocab_size, max_len, special_tokens
+    dataset, vocab_size, max_len, special_tokens
   )
   special_ids = []
   for i in range(len(special_tokens)):
