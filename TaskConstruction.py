@@ -5,7 +5,7 @@ import numpy as np
 
 # should wrap into a generator so you don't have to keep re-loading the entire language model dataset
 # probably want to load this from disk
-def masked_language_model(encoded_train_texts):
+def masked_language_model(encoded_train_texts, mask_token_id):
   # vectorize with masking
   new_texts = np.copy(encoded_train_texts)
   rnd_idxs = list(range(256))
