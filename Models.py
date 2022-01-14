@@ -1,6 +1,7 @@
 import tensorflow as tf
 from tensorflow import keras
 from tensorflow.keras import layers
+import numpy as np
 
 def bert_module(query, key, value, embed_dims, num_heads, ff_dim):
     # Multi headed self-attention
